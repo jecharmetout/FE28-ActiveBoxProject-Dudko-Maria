@@ -2,10 +2,13 @@
 //     font-size: $_36px;
 //     color: red;
 // }
+// .benefits{
+//     padding: 115px 0 ;
+// }
 .benefits-item{
     
-    width: 370px;
-    margin: 0 10px 87px;
+    width: 350px;
+    margin: 0 15px 87px;
     cursor: pointer;
     transition: 1s;
     &:nth-last-child(-n+3){

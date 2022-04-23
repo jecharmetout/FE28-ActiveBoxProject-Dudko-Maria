@@ -3,7 +3,9 @@
 @import "font.scss";
 @import "header.scss";
 @import "benefits.scss";
+@import "team.scss";
 @import "download.scss";
+
 
 
 * {
@@ -17,6 +19,16 @@ html {
   font-family: $raleway;
   font-size: $_16px;
   background: $white;
+  
+  @media (max-width: 992px) {
+    font-size: $_16px;
+  }
+  @media (max-width: 767px) {
+    font-size: $_15px;
+  }
+  @media (max-width: 430px) {
+    font-size: $_14px;
+  }
 }
 
 .container {
@@ -43,7 +55,8 @@ html {
 }
 
 section {
-  padding: 78px 0;
+//   padding: 0 0 115px;
+  padding: 115px 0;
 }
 .wrap {
   display: flex;

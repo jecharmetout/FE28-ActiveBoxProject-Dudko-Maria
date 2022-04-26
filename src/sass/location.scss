@@ -8,6 +8,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 -15px;
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
+  
   .location-item {
     width: 360px;
     height: 130px;
@@ -16,6 +20,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    &:nth-child(2){
+        @media (max-width: 992px) {
+            margin-bottom: 70px;
+          }
+        
+    }
+    
     .location-title {
       font-weight: 700;
       font-size: $_18px;
@@ -41,6 +52,8 @@
     .location-icon {
       display: flex;
       justify-content: center;
+     
+      
       a {
         font-weight: 400;
         color: $lightgrey;
